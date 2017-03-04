@@ -8,10 +8,16 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="sg.edu.nus.personalmedipal.MediPalActivity">
+    tools:context="sg.edu.nus.personalmedipal.activity.MediPalActivity">
 
-    <TextView
+    <Button
+        android:text="@string/buttonAppointment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_marginStart="20dp"
+        android:id="@+id/buttonAppointment"
+        android:onClick="onClickAppointment"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="33dp" />
 </RelativeLayout>

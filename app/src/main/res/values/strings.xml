@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">PersonalMediPal</string>
+    <string name="checkboxApptNotification">Notification</string>
+    <string name="buttonApptSave">Save</string>
+    <string name="buttonApptModify">Modify</string>
+    <string name="buttonAppointment">Appointment</string>
+    <string name="editTextApptDateTime">Date</string>
+    <string name="editTextApptID">Appointment ID</string>
 </resources>
