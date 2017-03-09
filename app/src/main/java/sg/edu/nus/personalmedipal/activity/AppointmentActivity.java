@@ -31,8 +31,8 @@ public class AppointmentActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_appointment);
 
-        editTextApptDateTime = (EditText) findViewById(R.id.editTextApptDateTime);
-        editTextAppID = (EditText) findViewById(R.id.editTextAppID);
+        editTextApptDateTime = (EditText) findViewById(R.id.edit_text_appt_date);
+        editTextAppID = (EditText) findViewById(R.id.edit_text_app_ID);
 
         calendar = Calendar.getInstance();
         int day = calendar.get(Calendar.DAY_OF_MONTH);
@@ -52,15 +52,15 @@ public class AppointmentActivity extends AppCompatActivity {
 
     }
 
-    public void onClickSave(View view) {
+    public void onClickAdd(View view) {
 
-        checkBoxApptNotification = (CheckBox) findViewById(R.id.checkBoxApptNotification);
+        checkBoxApptNotification = (CheckBox) findViewById(R.id.check_box_appt_notification);
         if (checkBoxApptNotification.isChecked()) {
             createNotificationMessage();
         }
     }
 
-    public void onClickModify(View view) {
+    public void onClickDelete(View view) {
 
         modifyNotificationMessage();
     }

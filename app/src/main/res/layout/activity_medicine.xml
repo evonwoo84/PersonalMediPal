@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sg.edu.nus.personalmedipal.activity.MedicineActivity">
+
+    <android.support.v4.view.ViewPager
+    android:id="@+id/pager"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_medicine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            app:tabMode="fixed">
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tab_medication"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_medicine"
+                android:text="@string/text_medicine" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tab_consumption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_consumption"
+                android:text="@string/text_consumption" />
+
+        </android.support.design.widget.TabLayout>
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

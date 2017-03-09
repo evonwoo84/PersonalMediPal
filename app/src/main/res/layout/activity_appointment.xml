@@ -11,44 +11,45 @@
     tools:context="sg.edu.nus.personalmedipal.activity.AppointmentActivity">
 
     <CheckBox
-        android:text="@string/checkboxApptNotification"
+        android:text="@string/checkbox_appt_notification"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/checkBoxApptNotification"
+        android:id="@+id/check_box_appt_notification"
         android:layout_centerVertical="true"
         android:layout_alignParentStart="true"
         android:layout_marginStart="26dp" />
 
     <Button
-        android:text="@string/buttonApptSave"
+        android:id="@+id/button_appt_add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/checkBoxApptNotification"
-        android:layout_marginBottom="15dp"
-        android:id="@+id/buttonApptSave"
-        android:onClick="onClickSave"/>
+        android:layout_alignStart="@+id/check_box_appt_notification"
+        android:layout_marginBottom="74dp"
+        android:onClick="onClickAdd"
+        android:text="@string/button_appt_add" />
 
     <Button
-        android:text="@string/buttonApptModify"
+        android:id="@+id/button_appt_update"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/buttonApptSave"
-        android:layout_alignEnd="@+id/editTextApptDateTime"
-        android:id="@+id/buttonApptModify"
-        android:onClick="onClickModify"/>
+        android:onClick="onClickDelete"
+        android:text="@string/button_appt_update"
+        android:layout_alignBaseline="@+id/button_appt_add"
+        android:layout_alignBottom="@+id/button_appt_add"
+        android:layout_alignEnd="@+id/edit_text_app_ID" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="date"
         android:ems="10"
-        android:id="@+id/editTextApptDateTime"
+        android:id="@+id/edit_text_appt_date"
         tools:ignore="LabelFor"
         android:layout_marginTop="18dp"
         android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/checkBoxApptNotification"
-        android:hint="@string/editTextApptDateTime" />
+        android:layout_alignStart="@+id/check_box_appt_notification"
+        android:hint="@string/edit_text_appt_date" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -56,9 +57,9 @@
         android:inputType="number"
         android:ems="10"
         android:layout_marginTop="23dp"
-        android:id="@+id/editTextAppID"
-        android:layout_below="@+id/editTextApptDateTime"
-        android:layout_alignStart="@+id/editTextApptDateTime"
-        android:hint="@string/editTextApptID" />
+        android:id="@+id/edit_text_app_ID"
+        android:layout_below="@+id/edit_text_appt_date"
+        android:layout_alignStart="@+id/edit_text_appt_date"
+        android:hint="@string/edit_text_appt_date" />
 
 </RelativeLayout>
